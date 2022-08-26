@@ -1,0 +1,6 @@
+ SELECT code_m,GROUP_CONCAT(quantity,"-",nature ," ",kg SEPARATOR ', \n') as N,SUM(quantity) as Quantity_Total
+  FROM fire
+  WHERE code_m=148047199
+  GROUP BY 'all';
+
+192.168.1.101
